@@ -9,6 +9,9 @@ on:
 jobs: 
   terraforn_init_plan:
     runs-on: Self-Hosted-Runner
+    permissions:
+      contents: read
+      issues: write
     steps:
       - name: Azure login
         uses: azure/Anil15@raju089singhgmail.onmicrosoft.com
