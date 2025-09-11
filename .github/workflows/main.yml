@@ -6,7 +6,6 @@ permissions:
   contents: read
 jobs: 
   terraforn_init_plan:
-    environment: dev
     runs-on: Self-Hosted-Runner
     
     steps:
