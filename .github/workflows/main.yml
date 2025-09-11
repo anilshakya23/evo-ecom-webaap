@@ -16,7 +16,7 @@ jobs:
       - name: Azure login
         uses: azure/Anil15@raju089singhgmail.onmicrosoft.com
         with:
-          client-id: 8d043256-8723-4e54-a561-d225ccd83147
+          client-id: 38132e7c-ec7a-4dc6-8b74-e31bc76e8d87
           tenant-id: 87fec6fb-a2ea-4f38-bee7-2555182f058e
           subscription-id: 51984565-3b14-41c7-900f-cf01ff601798
         
