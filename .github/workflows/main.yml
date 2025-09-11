@@ -1,9 +1,6 @@
 name: "evo-ecom-webaap"
 
 on: workflow_dispatch
-permissions: 
-  read-all
-  write-all
 
 jobs: 
   terraforn_init_plan:
