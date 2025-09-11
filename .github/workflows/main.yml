@@ -13,6 +13,9 @@ jobs:
       contents: read
       issues: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        
       - name: Azure login
         uses: azure/login@v2.76.0
         with:
