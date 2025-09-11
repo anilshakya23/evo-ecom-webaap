@@ -1,7 +1,9 @@
 name: "evo-ecom-webaap"
 
 on: workflow_dispatch
-
+permissions:
+      contents: read
+      issues: write
 jobs: 
   terraforn_init_plan:
     runs-on: Self-Hosted-Runner
