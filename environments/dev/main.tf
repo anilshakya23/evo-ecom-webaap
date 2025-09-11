@@ -25,7 +25,7 @@ module "dev-subnet" {
 }
 
 module "dev-nsg-vm-1" {
-    depends_on = [ module.dev-rg ]
+  depends_on            = [module.dev-rg]
   source                = "../../modules/azurerm_nsg"
   resource_nsg_name     = "dev-evo-ecom-webapp-nsg-1"
   resource_nsg_location = "East US"
@@ -33,7 +33,7 @@ module "dev-nsg-vm-1" {
 }
 
 module "dev-nsg-vm-2" {
-    depends_on = [ module.dev-rg ]
+  depends_on            = [module.dev-rg]
   source                = "../../modules/azurerm_nsg"
   resource_nsg_name     = "dev-evo-ecom-webapp-nsg-2"
   resource_nsg_location = "East US"
