@@ -57,6 +57,7 @@ module "dev-vm-1" {
   version_image                  = "latest"
   resource_nsg_name              = "dev-evo-ecom-webapp-nsg-1"
 
+
 }
 module "dev-vm-2" {
   depends_on                     = [module.dev-rg, module.dev-vnet, module.dev-subnet, ]
