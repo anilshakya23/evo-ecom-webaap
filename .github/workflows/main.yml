@@ -1,27 +1,15 @@
 name: "evo-ecom-webaap"
 
-on:
-  push:
-    branches:
-      - main
-      - 'feature/**'
+on: workflow_dispatch
 
 jobs: 
   terraforn_init_plan:
     runs-on: Self-Hosted-Runner
-    permissions:
-      contents: read
-      issues: write
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v5.0.0
         
-      - name: Azure login
-        uses: azure/login@v2.76.0
-        with:
-          client-id: 38132e7c-ec7a-4dc6-8b74-e31bc76e8d87
-          tenant-id: 87fec6fb-a2ea-4f38-bee7-2555182f058e
-          subscription-id: 51984565-3b14-41c7-900f-cf01ff601798
-        
+    
           
 
