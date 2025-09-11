@@ -14,7 +14,7 @@ jobs:
       issues: write
     steps:
       - name: Azure login
-        uses: azure/Anil15@raju089singhgmail.onmicrosoft.com
+        uses: azure/login@v2.76.0
         with:
           client-id: 38132e7c-ec7a-4dc6-8b74-e31bc76e8d87
           tenant-id: 87fec6fb-a2ea-4f38-bee7-2555182f058e
