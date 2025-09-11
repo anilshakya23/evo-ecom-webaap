@@ -38,8 +38,6 @@ module "dev-nsg-vm-2" {
   resource_group_name   = "dev-evo-ecom-webapp-rg"
 }
 
-
-
 module "dev-vm-1" {
   depends_on                     = [module.dev-rg, module.dev-vnet, module.dev-subnet, ]
   source                         = "../../modules/azurerm_vm"
@@ -59,7 +57,6 @@ module "dev-vm-1" {
   resource_nsg_name              = "dev-evo-ecom-webapp-nsg-1"
 
 }
-
 
 module "dev-vm-2" {
   depends_on                     = [module.dev-rg, module.dev-vnet, module.dev-subnet, ]
