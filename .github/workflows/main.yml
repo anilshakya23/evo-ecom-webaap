@@ -43,6 +43,7 @@ jobs:
         working-directory: environments/dev
 
   terraforn_apply:
+    needs: terraforn_init_plan
     environment: dev
     runs-on: Self-Hosted-Runner
     
