@@ -5,6 +5,7 @@ permissions:
   id-token: write
   contents: read
 jobs: 
+Environments: dev
   terraforn_init_plan:
     runs-on: Self-Hosted-Runner
     
